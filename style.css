@@ -1,3 +1,7 @@
+*
+{
+    font-family: "Montserrat", sans-serif;
+}
 body{
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -9,6 +13,7 @@ body{
 {
     display: flex;
     height: 100vh;
+    padding: 0.5rem;
 }
 .sidebar
 {
@@ -16,6 +21,7 @@ body{
     width: 340px;
     border-radius: 1rem;/*1rem = 16px*/
     /* padding: 0.5rem 0.75rem; */
+    margin-right: 0.5rem;
 }
 .main-content
 {
@@ -23,7 +29,8 @@ body{
     flex: 1;
     border-radius: 1rem;/*1rem = 16px*/
     overflow: auto;
-    padding: 0.5rem 0.75rem;
+    padding: 0 1.5rem 0 1.5rem;
+    margin-bottom: 72px;
 }
 .music-player
 {
@@ -90,4 +97,109 @@ a
 {
     padding: 0.5rem 0.75rem;
     margin-top: 0.5rem;
+    font-size: 1.25;
+    display: flex;
+}
+.icons i
+{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover
+{
+    opacity: 1;
+}
+.sub-box
+{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    /* line-height: 2.5rem; */
+}
+.para1
+{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.para2
+{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+.badge
+{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    width: fit-content;
+}
+.sticky-nav
+{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem 0 0 1rem;
+}
+.right img
+{
+    margin-left: 0.75rem;
+}
+.left
+{
+    display: flex;
+    place-items: center;
+}
+.sticky-nav-bar
+{
+    margin-right: 0.75rem;
+    padding: 0.5rem;
+    padding-right:0.5rem ;
+    padding-left: 0.5rem;
+}
+.dark
+{
+    background-color: black;
+    color: white;
+}
+@media(max-width:1000px)
+{
+    .hide
+    {
+        display: none;
+    }
+}
+.card
+{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+}
+.card-container
+{
+    display: flex;
+}
+.card img
+{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title
+{
+    font-weight: 600;
+}
+.card-info
+{
+    font-size: 0.85rem;
+    opacity: 0.7;
 }
